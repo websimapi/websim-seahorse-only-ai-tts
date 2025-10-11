@@ -6,6 +6,7 @@ const userInput = document.getElementById("userInput");
 const chat = document.getElementById("chat");
 const status = document.getElementById("status");
 const emojiInput = document.getElementById("emojiInput");
+const askSeahorseBtn = document.getElementById("askSeahorseBtn");
 
 let conversationHistory = [];
 
@@ -78,5 +79,12 @@ form.addEventListener("submit", async (e) => {
     appendMessage("Error: failed to get response", "ai");
   }
 });
-/* ...existing code... */
 
+askSeahorseBtn.addEventListener("click", async () => {
+  // programmatically ask the AI "What is the seahorse emoji" using the current emoji input
+  const question = "What is the seahorse emoji";
+  userInput.value = question;
+  // trigger the form submit handler
+  form.requestSubmit();
+});
+/* ...existing code... */
