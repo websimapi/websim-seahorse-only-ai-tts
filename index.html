@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- ...existing content... -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Seahorse-Only AI + TTS</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="importmap">
+  {
+    "imports": {
+      "nanoid": "https://cdn.jsdelivr.net/npm/nanoid@4.0.0/index.browser.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- ...existing content... -->
+  <main class="app">
+    <h1>Talk to the Seahorse AI</h1>
+    <form id="chatForm">
+      <textarea id="userInput" placeholder="Ask something..." rows="3" required></textarea>
+      <div class="controls">
+        <label>
+          Seahorse emoji
+          <input id="emojiInput" value="🐴" />
+        </label>
+        <button type="submit">Send</button>
+      </div>
+    </form>
+
+    <section id="chat">
+      <!-- ...existing content... -->
+    </section>
+
+    <div id="status" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js" type="module"></script>
+  <!-- ...existing content... -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
